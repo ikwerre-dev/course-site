@@ -6,6 +6,7 @@ import Features from '@/components/sections/Features';
 import Stats from '@/components/sections/Stats';
 import Testimonials from '@/components/sections/Testimonials';
 import CallToAction from '@/components/sections/CallToAction';
+import Footer from '@/components/sections/Footer';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Stats />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </div>
   );
 }

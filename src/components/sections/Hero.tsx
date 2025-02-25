@@ -64,7 +64,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 md:block hidden">
+            <div className="flex flex-col sm:flex-row gap-4 md:block ">
               <a 
                 href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
                 className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg group overflow-hidden"
@@ -87,7 +87,7 @@ export default function Hero() {
             <div className="relative bg-white p-6 rounded-3xl shadow-xl">
               <div className="aspect-video relative bg-gray-100 rounded-xl overflow-hidden mb-4">
                 <iframe
-                  src="https://player.vimeo.com/video/861034147?muted=1&app_id=122963"
+                  src="https://player.vimeo.com/video/793190141"
                   className="absolute inset-0 w-full h-full"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
