@@ -110,7 +110,7 @@ export default function Hero() {
                 
                 <div className="p-4 bg-gray-50 rounded-xl">
                   <p className="text-sm text-gray-600">
-                  &ldquo;The primary difference between a rich person and a poor person is how they manage fear.&ldquo;
+                  &ldquo;  The primary difference between a rich person and a poor person is how they manage fear.&ldquo; 
                   </p>
                 </div>
 

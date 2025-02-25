@@ -6,7 +6,7 @@ export default function Mindset() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl font-bold mb-6">
-            &ldquo;The Primary Difference Between A Rich Person And A Poor Person Is How They Manage Fear.&ldquo;
+            &ldquo; The Primary Difference Between A Rich Person And A Poor Person Is How They Manage Fear.&ldquo; 
           </h2>
           <p className="text-xl text-gray-600">
             Are you tired of living paycheck to paycheck? Inside the Wealth Accelerator, 
@@ -40,8 +40,8 @@ export default function Mindset() {
             <h3 className="text-2xl font-bold mb-6">Your Journey Begins Here</h3>
             <div className="space-y-6">
               <p>
-                &ldquo;It&ldquo;s not the fancy degrees. It&ldquo;s not the wealthy connections. 
-                It&ldquo;s not having a &ldquo;private banker.&ldquo; It&ldquo;s solely how you manage FEAR.&ldquo;
+                &ldquo; It&ldquo; s not the fancy degrees. It&ldquo; s not the wealthy connections. 
+                It&ldquo; s not having a &ldquo; private banker.&ldquo;  It&ldquo; s solely how you manage FEAR.&ldquo; 
               </p>
               <div className="border-t border-white/20 pt-6">
                 <p className="font-bold">Brian Rose</p>
