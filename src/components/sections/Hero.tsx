@@ -1,6 +1,4 @@
-import CountdownTimer from "../CountdownTimer";
-import Image from "next/image";
-import { FaCheckCircle, FaArrowRight, FaPlay, FaShieldAlt, FaCertificate } from "react-icons/fa";
+import { FaCheckCircle, FaArrowRight, FaPlay } from "react-icons/fa";
 
 export default function Hero() {
   const benefits = [
@@ -111,7 +109,7 @@ export default function Hero() {
                 
                 <div className="p-4 bg-gray-50 rounded-xl">
                   <p className="text-sm text-gray-600">
-                    "The primary difference between a rich person and a poor person is how they manage fear."
+                  &ldquo;The primary difference between a rich person and a poor person is how they manage fear.&ldquo;
                   </p>
                 </div>
 

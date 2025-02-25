@@ -91,7 +91,7 @@ export default function Features() {
                 <div className="mb-4">
                   {"★".repeat(5)}
                 </div>
-                <p className="text-gray-300 mb-6 italic">"{review.text}"</p>
+                <p className="text-gray-300 mb-6 italic">&ldquo;{review.text}&ldquo;</p>
                 <div>
                   <p className="font-semibold text-white">{review.author}</p>
                   <p className="text-yellow-400 text-sm">{review.role}</p>
