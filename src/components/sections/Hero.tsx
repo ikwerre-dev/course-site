@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaArrowRight, FaPlay } from "react-icons/fa";
+import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 
 export default function Hero() {
   const benefits = [
@@ -86,13 +86,14 @@ export default function Hero() {
             <div className="absolute inset-0 bg-blue-100 rounded-3xl transform rotate-3"></div>
             <div className="relative bg-white p-6 rounded-3xl shadow-xl">
               <div className="aspect-video relative bg-gray-100 rounded-xl overflow-hidden mb-4">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="bg-blue-600 text-white p-4 rounded-full hover:bg-blue-700 transition-all transform hover:scale-110">
-                    <FaPlay className="text-xl" />
-                  </button>
-                </div>
+                <iframe
+                  src="https://player.vimeo.com/video/861034147?muted=1&app_id=122963"
+                  className="absolute inset-0 w-full h-full"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
-              
+
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
