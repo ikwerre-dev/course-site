@@ -88,7 +88,7 @@ export default function Features() {
           <div className="grid md:grid-cols-3 gap-8">
             {reviews.map((review, index) => (
               <div key={index} className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 p-8 rounded-2xl backdrop-blur-sm">
-                <div className="mb-4">
+                <div className="mb-4 text-yellow-300">
                   {"★".repeat(5)}
                 </div>
                 <p className="text-gray-300 mb-6 italic">&ldquo;{review.text}&ldquo;</p>
