@@ -1,4 +1,5 @@
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Hero() {
   const benefits = [
@@ -17,10 +18,12 @@ export default function Hero() {
   return (
     <section className="pt-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-20">
+  
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div className="text-left space-y-6">
-          
+
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Create Generational Wealth
               <span className="block text-blue-600">In Six Simple Steps</span>
@@ -28,7 +31,7 @@ export default function Hero() {
 
             <div className="animate-pulse bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 text-white p-3 rounded-lg text-center">
               <span className="text-lg font-bold">🔥 Special Offer - 90% OFF 🔥</span>
-              <p className="text-sm">Regular Price: $4000 → Now Only $400</p>
+              <p className="text-sm">Regular Price: $1500 → Now Only $150</p>
             </div>
 
             <p className="text-xl text-gray-600 max-w-xl">
@@ -54,31 +57,39 @@ export default function Hero() {
             </ul>
 
             <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 shadow-lg md:hidden z-50">
-              <a 
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
+              <a
+                href="https://t.me/+9Jq-Eb18NuQ1MDI8"
                 className="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg w-full animate-bounce"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Join Now - Only $400 <FaArrowRight />
+                Buy course for $150 <FaArrowRight />
               </a>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 md:block ">
-              <a 
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
+              <a
+                href="https://t.me/+9Jq-Eb18NuQ1MDI8"
                 className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg group overflow-hidden"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-500 animate-pulse opacity-75 group-hover:opacity-100 transition-opacity"></span>
-                <span className="relative">Join Now - Only $400</span>
+                <span className="relative">Buy course for $150</span>
                 <FaArrowRight className="relative" />
               </a>
-              
+
             </div>
 
-             
+            <div className="relative w-full h-[14rem] rounded-xl overflow-hidden mb-4">
+          <Image
+            src="/1.png"
+            alt="Wealth Accelerator Program"
+            fill
+            className="object-cover"
+          />
+
+        </div>
           </div>
 
           {/* Right Column */}
@@ -95,9 +106,17 @@ export default function Hero() {
               </div>
 
               <div className="space-y-4">
+
                 <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-full bg-blue-100"></div>
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden">
+                      <Image
+                        src="/3.png"
+                        alt="Brian Rose"
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
                     <div>
                       <p className="font-semibold text-gray-900">Brian Rose</p>
                       <p className="text-sm text-gray-500">Founder, London Real</p>
@@ -107,10 +126,10 @@ export default function Hero() {
                     {"★".repeat(5)}
                   </div>
                 </div>
-                
+
                 <div className="p-4 bg-gray-50 rounded-xl">
                   <p className="text-sm text-gray-600">
-                  &ldquo; The primary difference between a rich person and a poor person is how they manage fear.&ldquo; 
+                    &ldquo; The primary difference between a rich person and a poor person is how they manage fear.&ldquo;
                   </p>
                 </div>
 

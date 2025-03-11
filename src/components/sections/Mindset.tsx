@@ -1,4 +1,5 @@
 import { FaBrain, FaLightbulb } from 'react-icons/fa';
+import Image from 'next/image';
 
 export default function Mindset() {
   return (
@@ -18,6 +19,16 @@ export default function Mindset() {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <FaBrain className="text-blue-600 w-12 h-12 mb-6" />
             <h3 className="text-2xl font-bold mb-4">Transform Your Mindset</h3>
+            
+            <div className="relative w-full h-[25rem] mb-6 rounded-xl overflow-hidden">
+              <Image
+                src="/3.png"
+                alt="Transform Your Financial Mindset"
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+
             <p className="text-gray-600 mb-6">
               Learn to manage fear and use it as a motivator rather than a roadblock. 
               Successful people face fear head-on and use it as a catalyst for action.

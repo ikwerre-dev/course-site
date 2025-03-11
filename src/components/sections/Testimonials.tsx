@@ -30,7 +30,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-800 p-8 rounded-2xl relative">
               <FaQuoteLeft className="text-blue-500 text-4xl mb-6" />
-              <p className="text-lg mb-8">&ldquo{testimonial.quote}&ldquo</p>
+              <p className="text-lg mb-8">&ldquo;{testimonial.quote}&ldquo;</p>
               <div className="mt-auto">
                 <p className="font-bold">{testimonial.author}</p>
                 <p className="text-blue-400">{testimonial.role}</p>

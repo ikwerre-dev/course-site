@@ -17,7 +17,7 @@ export default function CallToAction() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Join Now - Only $400 <FaArrowRight />
+          Buy course for $150 <FaArrowRight />
         </a>
         <p className="mt-4 text-blue-200">Limited Time Offer - Don&lsquo;t Miss Out!</p>
       </div>
