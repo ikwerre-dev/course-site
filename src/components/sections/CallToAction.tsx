@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
 
 export default function CallToAction() {
@@ -11,14 +12,14 @@ export default function CallToAction() {
           Don&lsquo;t let another year pass by living paycheck to paycheck. 
           Take control of your financial future today.
         </p>
-        <a 
-          href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
+        <Link 
+          href="/signup" 
           className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg"
           target="_blank"
           rel="noopener noreferrer"
         >
           Buy course for $150 <FaArrowRight />
-        </a>
+        </Link>
         <p className="mt-4 text-blue-200">Limited Time Offer - Don&lsquo;t Miss Out!</p>
       </div>
     </section>

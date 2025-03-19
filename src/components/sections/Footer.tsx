@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaTelegram, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
@@ -20,12 +21,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
             <div className="space-y-2">
-              <a href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
-                 className="flex items-center gap-2 hover:text-white transition"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <FaTelegram /> Join on Telegram
-              </a>
+              
               <a href="mailto:support@wealthaccelerator.com" 
                  className="flex items-center gap-2 hover:text-white transition">
                 <FaEnvelope /> Email Support
@@ -36,14 +32,14 @@ export default function Footer() {
             <div className="bg-gray-800 p-4 rounded-lg">
               <h4 className="text-lg font-semibold text-white mb-2">Limited Time Offer</h4>
               <p className="text-sm mb-4">Join now and save 90% on your enrollment</p>
-              <a 
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8" 
+              <Link 
+          href="/signup" 
                 className="block text-center bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Enroll Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

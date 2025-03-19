@@ -1,5 +1,7 @@
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import CountdownTimer from "@/components/CountdownTimer";
+import Link from "next/link";
 
 export default function Hero() {
   const benefits = [
@@ -18,10 +20,9 @@ export default function Hero() {
   return (
     <section className="pt-24 bg-white">
       <div className="container mx-auto px-4 lg:px-8 py-12 lg:py-20">
-  
+
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column */}
           <div className="text-left space-y-6">
 
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -32,6 +33,10 @@ export default function Hero() {
             <div className="animate-pulse bg-gradient-to-r from-red-500 via-yellow-500 to-red-500 text-white p-3 rounded-lg text-center">
               <span className="text-lg font-bold">🔥 Special Offer - 90% OFF 🔥</span>
               <p className="text-sm">Regular Price: $1500 → Now Only $150</p>
+              <div className="mt-2">
+                <p className="text-xs mb-1">Offer Expires In:</p>
+                <CountdownTimer />
+              </div>
             </div>
 
             <p className="text-xl text-gray-600 max-w-xl">
@@ -57,19 +62,19 @@ export default function Hero() {
             </ul>
 
             <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 shadow-lg md:hidden z-50">
-              <a
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8"
+              <Link
+                href="/signup"
                 className="flex items-center justify-center gap-2 bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all transform hover:scale-105 shadow-lg w-full animate-bounce"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Buy course for $150 <FaArrowRight />
-              </a>
+              </Link>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 md:block ">
-              <a
-                href="https://t.me/+9Jq-Eb18NuQ1MDI8"
+              <Link
+                href="/signup"
                 className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-blue-700 hover:to-blue-800 transition-all transform hover:scale-105 shadow-lg group overflow-hidden"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,19 +82,24 @@ export default function Hero() {
                 <span className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-yellow-500 animate-pulse opacity-75 group-hover:opacity-100 transition-opacity"></span>
                 <span className="relative">Buy course for $150</span>
                 <FaArrowRight className="relative" />
-              </a>
+              </Link>
 
+              <button
+                className="relative flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:from-purple-700 hover:to-purple-800 transition-all transform hover:scale-105 shadow-lg mt-4 sm:mt-0 sm:ml-4 md:mt-4 md:ml-0"
+              >
+                <span className="relative">Watch Free Preview</span>
+              </button>
             </div>
 
             <div className="relative w-full h-[14rem] rounded-xl overflow-hidden mb-4">
-          <Image
-            src="/1.png"
-            alt="Wealth Accelerator Program"
-            fill
-            className="object-cover"
-          />
+              <Image
+                src="/1.png"
+                alt="Wealth Accelerator Program"
+                fill
+                className="object-cover"
+              />
 
-        </div>
+            </div>
           </div>
 
           {/* Right Column */}
