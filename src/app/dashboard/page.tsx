@@ -121,7 +121,6 @@ export default function Dashboard() {
 
     const handleReviewSubmit = async () => {
         try {
-            // Here you would typically send the review to your API
             setReviewSubmitted(true);
             setTimeout(() => {
                 setShowReviewModal(false);
@@ -315,8 +314,8 @@ export default function Dashboard() {
                                                     key={crypto.id}
                                                     onClick={() => setSelectedCrypto(crypto)}
                                                     className={`w-full flex items-center p-3 rounded-lg border ${selectedCrypto.id === crypto.id
-                                                            ? 'border-blue-500 bg-blue-50'
-                                                            : 'border-gray-200'
+                                                        ? 'border-blue-500 bg-blue-50'
+                                                        : 'border-gray-200'
                                                         }`}
                                                 >
                                                     <crypto.icon className="text-2xl" />
