@@ -54,8 +54,8 @@ export default function LoginPage() {
 
       // Redirect to dashboard/course page
       router.push('/dashboard');
-    } catch (err: any) {
-      setError(err.message || 'An error occurred during login');
+    }catch (err: Error | unknown) {
+      setError(err instanceof Error ? err.message : 'An error occurred during login');
     } finally {
       setLoading(false);
     }
@@ -107,9 +107,7 @@ export default function LoginPage() {
                     <label htmlFor="password" className="block text-sm font-medium text-gray-700">
                       Password
                     </label>
-                    <Link href="/forgot-password" className="text-sm text-blue-600 hover:underline">
-                      Forgot password?
-                    </Link>
+                    
                   </div>
                   <input
                     id="password"

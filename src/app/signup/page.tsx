@@ -1,8 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
+ import Link from 'next/link';
 import Header from '@/components/sections/Header';
 import Footer from '@/components/sections/Footer';
 
@@ -55,8 +54,8 @@ export default function SignupPage() {
 
       // Redirect to verification page
       router.push('/verification?email=' + encodeURIComponent(formData.email));
-    } catch (err: any) {
-      setError(err.message || 'An error occurred during signup');
+    }catch (err: Error | unknown) {
+      setError(err instanceof Error ? err.message : 'An error occurred during signup');
     } finally {
       setLoading(false);
     }

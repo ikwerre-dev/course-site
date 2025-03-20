@@ -6,6 +6,19 @@ datasource db {
 generator client {
   provider = "prisma-client-js"
 }
+ 
+
+model Payment {
+  id            String   @id @default(cuid())
+  userId        String
+  amount        Float
+  currency      String
+  walletAddress String   // Changed from wallet to walletAddress
+  proofUrl      String
+  status        String   @default("pending")
+  createdAt     DateTime @default(now())
+  user          User     @relation(fields: [userId], references: [id])
+}
 
 model User {
   id                String    @id @default(cuid())
@@ -14,19 +27,9 @@ model User {
   password          String
   verificationToken String?
   verified          Boolean   @default(false)
+  resetToken        String?   // Add this field
+  resetTokenExpiry  DateTime? // Add this field
   createdAt         DateTime  @default(now())
   updatedAt         DateTime  @updatedAt
   payments          Payment[]
-}
-
-model Payment {
-  id        String   @id @default(cuid())
-  userId    String
-  amount    Float
-  currency  String
-  status    String
-  txHash    String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  user      User     @relation(fields: [userId], references: [id])
 }

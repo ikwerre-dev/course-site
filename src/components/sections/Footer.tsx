@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaTelegram, FaEnvelope } from 'react-icons/fa';
+import {  FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (

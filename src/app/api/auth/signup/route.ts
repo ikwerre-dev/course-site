@@ -34,6 +34,7 @@ export async function POST(req: Request) {
         verificationToken,
       },
     });
+    console.log(user)
 
     // Send verification email
     await sendVerificationEmail(email, verificationToken);

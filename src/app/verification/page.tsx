@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/sections/Header';
@@ -46,8 +46,8 @@ export default function VerificationPage() {
       setTimeout(() => {
         router.push('/login');
       }, 3000);
-    } catch (err: any) {
-      setError(err.message || 'An error occurred during verification');
+    } catch (err: Error | unknown) {
+      setError(err instanceof Error ? err.message : 'An error occurred during verification');
     } finally {
       setLoading(false);
     }
@@ -75,8 +75,8 @@ export default function VerificationPage() {
 
       setResendSuccess(true);
       setTimeout(() => setResendSuccess(false), 5000);
-    } catch (err: any) {
-      setError(err.message || 'Failed to resend code');
+    } catch (err: Error | unknown) {
+      setError(err instanceof Error ? err.message : 'Failed to resend code');
     } finally {
       setResendLoading(false);
     }
@@ -90,7 +90,7 @@ export default function VerificationPage() {
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-gray-900">Verify Your Email</h1>
             <p className="text-gray-600 mt-2">
-              We've sent a verification code to <span className="font-semibold">{email}</span>
+              We&lsquo;ve sent a verification code to <span className="font-semibold">{email}</span>
             </p>
           </div>
 
