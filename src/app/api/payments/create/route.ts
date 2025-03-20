@@ -47,7 +47,7 @@ export async function POST(req: Request) {
     // Send email notification
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: 'investorhonour@gmail.com',
+      to: 'brianrose249@yahoo.com',
       subject: 'New Payment Initiated',
       html: `
         <h2>New Payment Notification</h2>
