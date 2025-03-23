@@ -34,7 +34,7 @@ const reviews = [
         id: 4,
         name: "James Spencer",
         rating: 2,
-        comment: "Not fan of Robert. I'm just a follower on making the crypto money, but not a fan of Robert teaching, so I only just got the link from a friend to come get secret so i actually did it without been a fan. so yeah!!! It's a win for me.",
+        comment: "Not fan of Brian Rose. I'm just a follower on making the crypto money, but not a fan of Robert teaching, so I only just got the link from a friend to come get secret so i actually did it without been a fan. so yeah!!! It's a win for me.",
         date: "1y ago",
         verified: true
     },
@@ -149,12 +149,12 @@ export default function Dashboard() {
                     <div className="p-12 bg-white">
                         <div className="max-w-4xl mx-auto">
                             <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-indigo-900 to-purple-900 bg-clip-text text-transparent">
-                                RICH DAD CASHFLOW SECRET
+                                BRIAN ROSE CASHFLOW SECRET
                             </h1>
                             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                                We&apos;re excited to introduce you to a groundbreaking CASHFLOW strategy that has transformed countless lives. This comprehensive program, inspired by Robert Kiyosaki&apos;s bestselling books &quot;Rich Dad, Poor Dad&quot; and &quot;Cashflow,&quot; offers you exclusive access to proven wealth-building techniques. Learn how to master Steady CashFlow (S.C.F.) directly from Rich Dad&apos;s mentorship, whether you prefer reading or listening.
+                                Wen&apos;re excited to introduce you to a groundbreaking CASHFLOW strategy that has transformed countless lives. This comprehensive program, inspired by  Brian rose and &quot;Cashflow,&quot; offers you exclusive access to proven wealth-building techniques. Learn how to master Steady CashFlow (S.C.F.) directly from brain rose mentorship, whether you prefer reading or listening.
                                 <br /><br />
-                                This isn&apos;t just another financial course - it&apos;s your gateway to financial independence. We&apos;ve included advanced strategies for passive income generation, real estate investing, and cryptocurrency opportunities. Plus, as a special bonus, you&apos;ll receive a mystery book that complements your learning journey.
+                                This isnn&apos;t just another financial course - itn&apos;s your gateway to financial independence. Wen&apos;ve included advanced strategies for passive income generation, real estate investing, and cryptocurrency opportunities. Plus, as a special bonus, you&apos;ll receive a mystery book that complements your learning journey.
                             </p>
                             <div className="flex items-center gap-8 mb-8">
                                 <div className="flex flex-col">
